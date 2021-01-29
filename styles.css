@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+/*left nav nested flexbox*/
+#nav-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-left {
+    align-self: center;
+}
+
+
+/*flexbox nav properties*/
+#nav-container {
+    display: flex;
+    justify-content: center;
+}
+.nav-child {
+    align-self: center;
+}
+.nav-child #new-york-times {
+    flex: 5;
+}
+
+nav .nav-child {
+    border: 1px solid red;
+}
+
+/*hover nav actions*/
+#hamburger:hover {
+    cursor: pointer;
+}
+#search:hover {
+    cursor: pointer;
+}
+#nav-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#new-york-times:hover {
+    cursor: pointer;
+}
+
+#subscribe, #log-in {
+    /* border: none; */
+}
+
+/*NAV FONT OVERRIDES*/
+#nav-text {
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 14px;
+}
+
+nav hr {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    border: none;
+    height: 0.1%;
+    background-color: rgb(197, 189, 189);
+}
+#nav-container {
+    border: 1px solid blue; 
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.7em;
+    position: absolute;
+    top: 15%;
+}
+
+
+
