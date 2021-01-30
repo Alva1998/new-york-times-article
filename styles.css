@@ -4,6 +4,13 @@
     padding: 0; 
 }
 
+/*custom new york times font*/
+@font-face {
+    font-family: "Chomsky";
+    src: url("./assets/Chomsky.woff") format("woff");
+    src: url("./assets/Chomsky.otf") format("otf");
+}
+
 /*left nav nested flexbox*/
 #nav-left {
     display: flex;
@@ -70,7 +77,12 @@ nav hr {
     height: 5%;
     justify-content: center;
 }
+/*new york times font for nav*/
+#new-york-times {
+    font-family: "Chomsky", sans-serif;
+}
 
+/*HEADER CSS*/
 header {
     display: flex;
     justify-content: center;
@@ -81,6 +93,7 @@ h1 {
     position: absolute;
     top: 15%;
 }
+
 
 
 
