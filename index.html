@@ -13,17 +13,20 @@
 </head>
 <body>
     <!--main nav: use of nested flexbox-->
-    <nav id="nav-container">
-        <div id="nav-left">
-            <img class="nav-left" class="nav-child" id="hamburger" src="assets/hamburger.svg">
-            <img class="nav-left" class="nav-child" id="search" src="assets/iconmonstr-search-thin.svg">
-            <div class="nav-left" class="nav-child" id="nav-text">Space & Combat</div>
-        </div>
+    <nav>
+        <ul id="nav-left">
+            <li><a href="#"><img class="nav-left nav-child" id="hamburger" src="assets/hamburger.svg"></a></li>
+            <li><a href="#"><img class="nav-left nav-child" id="search" src="assets/iconmonstr-search-thin.svg"></a></li>
+            <li class="nav-left nav-child" id="nav-text">Space & Combat</li>
+        </ul>
         
         <div class="nav-child" id="new-york-times">The New York Times</div>
        
-        <button class="nav-child" id="subscribe">SUBSCRIBE FOR $1/WEEK</button>
-        <button class="nav-child" id="log-in">LOG IN</button>
+        <!--COUNTS AS ONE FLEX ITEM BECAUSE THE NAV HAS DISPLAY FLEX ANY ITEM NESTED INSIDE COUNTS AS ONE SO THIS DIV COUNTS AS ONE IT DOESNT MATTER THAT IT HAS 2 ITEMS INSIDE OF IT SINCE NAV FLEX ONLY COUNTS THE IMMEDIATE CHILDREN-->
+        <div>
+            <button class="nav-child" id="subscribe">SUBSCRIBE NOW</button>
+            <button class="nav-child" id="log-in">LOG IN</button>
+        </div>
     </nav>
 
     <hr>
@@ -31,21 +34,31 @@
     <!--header with social links-->
     <header>
         <h1>Space Ripples Reveal Big Bang's Smoking Gun</h1>
-        <hr>
+        <!-- <hr> -->
 
         <div class="socials-wrapper">
             <img class="socials" src="assets/facebook.svg" alt="go to facebook">
             <img class="socials" src="assets/twitter.svg" alt="go to twitter">
             <img class="socials" src="assets/email.svg" alt="go to email">
             <img class="socials" src="assets/forward.svg" alt="forward this article">
-            <img src="assets/bookmark.svg" alt="bookmark this article" class="socials">
+            <img id="bookmark" src="assets/bookmark.svg" alt="bookmark this article" class="socials">
+        </div>
+
+        <div id="img-wrapper">
+            <img id="header-img" src="assets/18cosmos-superJumbo.jpg" alt="a man and a telescope">
+            <figcaption>Alan Guth was one of the first physicists to hypothesize the existence of inflation, which explains how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years ago. Rick Friedman for The New York Times</figcaption>
         </div>
     </header>
 
-
     <!--Main text of the article below the first image-->
     <article>
-
+        <section class="main-article">
+            <p>By Dennis Overbye</p>
+            <p>March 17, 2014</p>
+            <p>CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.</p>
+            <p>He was trying to understand why there was no trace of some exotic particles that should have been created in the Big Bang. Instead he discovered what might have made the universe bang to begin with. A potential hitch in the presumed course of cosmic evolution could have infused space itself with a special energy that exerted a repulsive force, causing the universe to swell faster than the speed of light for a prodigiously violent instant.</p>
+            <p>If true, the rapid engorgement would solve paradoxes like why the heavens look uniform from pole to pole and not like a jagged, warped mess. The enormous ballooning would iron out all the wrinkles and irregularities. Those particles were not missing, but would be diluted beyond detection, like spit in the ocean.</p>
+        </section>
 
 
 
