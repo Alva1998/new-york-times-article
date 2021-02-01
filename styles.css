@@ -10,51 +10,38 @@
     src: url("assets/Chomsky.woff") format("woff");
 }
 
-/*left nav nested flexbox*/
+/*flexbox nav properties*/
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.6rem;
+    align-items: center;
+    background: white;6
+    z-index: 999;
+
+}
+
 #nav-left {
     display: flex;
+    align-items:center;
+    font-size: 14px;
+    gap: 2rem;
     justify-content: flex-start;
 }
-.nav-left {
-    align-self: center;
-}
 
-
-/*flexbox nav properties*/
-#nav-container {
+nav #nav-center {
     display: flex;
-    justify-content: center;
-}
-.nav-child {
-    align-self: center;
-}
-.nav-child #new-york-times {
-    flex: 5;
-}
-
-nav .nav-child {
-    /* border: 1px solid red; */
+    align-items: center;
 }
 
 /*hover nav actions*/
-#hamburger:hover {
-    cursor: pointer;
-}
-#search:hover {
+.nav-child:hover {
     cursor: pointer;
 }
 #nav-text:hover {
-    cursor: pointer;
     text-decoration: underline;
-}
-#new-york-times:hover {
-    cursor: pointer;
-}
-#subscribe:hover {
-    cursor: pointer;
-}
-#log-in:hover {
-    cursor: pointer;
 }
 
 /*NAV FONT OVERRIDES*/
@@ -63,19 +50,20 @@ nav .nav-child {
     font-size: 14px;
 }
 
-nav hr {
-    width: 100%;
-    position: absolute;
-    top: 5%;
-    border: none;
-    height: 0.1%;
-    background-color: rgb(197, 189, 189);
-}
 #nav-container {
     position: absolute;
     width: 100%;
     height: 5%;
     justify-content: center;
+}
+
+#subscribe, #log-in {
+    border: none;
+    padding: 0.8em 0.8em 0.5em 0.8em;
+    border-radius: 5%;
+    background-color: #567b95;
+    color: #F2FFF8;
+    font-weight: bold;
 }
 
 /*new york times font for nav*/
@@ -110,13 +98,50 @@ hr {
     margin-right: 4%;
 }
 
-.socials {
-    background-color: #FFFFFF;
-    border-radius: 50%;
+ .socials {
+    /* background-color: rgb(219, 219, 219); */
+    border-radius: 45%;
     margin-top: 42%;
-    margin-left: 2%;
+    margin-left: 3%;
+    background:rgb(219, 219, 219);
+    height: 8%;
+    border: 1px solid rgb(219, 219, 219);
+
+    transition: background-color 0.3s ease;
 }
 
+.socials:hover {
+    cursor: pointer;
+    background-color:whitesmoke;
+}
 
+#img-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#header-img {
+    height: 95%;
+    width: 45%;
+    align-self: center;
+    order: 1;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+figcaption {
+    order: 2;
+    width: 720px;
+    margin: 0.625rem 0 1.25rem 0;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #666;
+    align-self: center;
+}
 
-
+/*MAIN ARTICLE CSS*/
+.main-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
