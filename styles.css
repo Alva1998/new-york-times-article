@@ -187,4 +187,36 @@ article .title {
 section .caption {
     font-size: 15px;
     color: #666;
+    width: 75%;
+}
+
+/*The theory of inflation image section */
+#theory-section aside img {
+    grid-area: img;
+}
+#theory-section aside figcaption {
+    grid-area: txt;
+    display: block;
+}
+#theory-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr); 
+    align-items: center;
+} 
+.nested {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    width: auto;
+    order: 0;
+}
+.nested img {
+    order: 99;
+    width: 10em;
+}
+.nested figcaption {
+    order: 999;
+    width: 10em;
 }
