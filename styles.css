@@ -198,25 +198,39 @@ section .caption {
     grid-area: txt;
     display: block;
 }
+
 #theory-section {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
+    column-gap: 15px;
+    row-gap: 0;
 } 
-.nested {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    width: auto;
-    order: 0;
+
+aside .row-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
-.nested img {
-    order: 99;
-    width: 10em;
+aside img {
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
-.nested figcaption {
-    order: 999;
-    width: 10em;
+
+aside .row2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
+
+aside img, aside figcaption {
+    width: 12em;
+    /* font-size:  */
+}
+
+/*ARTICLE LINKS*/
+p .article-link {
+    color: rgba(11,96,151,255);
+}
+
+
+/*EMBEDDED YOUTUBE VIDE*/
