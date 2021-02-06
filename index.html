@@ -10,6 +10,12 @@
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--main nav: use of nested flexbox-->
@@ -20,7 +26,7 @@
             <li class="nav-left nav-child" id="nav-text">Space & Combat</li>
         </ul>
         
-        <div class="nav-child" id="new-york-times">The New York Times</div>
+        <div class="nav-child new-york-times">The New York Times</div>
        
         <!--COUNTS AS ONE FLEX ITEM BECAUSE THE NAV HAS DISPLAY FLEX ANY ITEM NESTED INSIDE COUNTS AS ONE SO THIS DIV COUNTS AS ONE IT DOESNT MATTER THAT IT HAS 2 ITEMS INSIDE OF IT SINCE NAV FLEX ONLY COUNTS THE IMMEDIATE CHILDREN-->
         <div>
@@ -34,7 +40,6 @@
     <!--header with social links-->
     <header>
         <h1>Space Ripples Reveal Big Bang's Smoking Gun</h1>
-        <!-- <hr> -->
 
         <div class="socials-wrapper">
             <img class="socials" src="assets/facebook.svg" alt="go to facebook">
@@ -115,9 +120,7 @@
                 <figcaption>EXPANSION  Returning to our coffee, imagine a single, central pot expanding faster than light and cooling to an even temperature as it expands. That is something like inflation. And the structure of the universe mirrors the froth and foam of the original pot.</figcaption>
             </aside>
 
-            <hr>
             <p>By LARRY BUCHANAN and JONATHAN CORUM</p>
-
             <p>Dr. Kovac said the chance that the results were a fluke was only one in 10 million.</p>
             <p>Dr. Guth, now 67, pronounced himself “bowled over,” saying he had not expected such a definite confirmation in his lifetime.</p>
 
@@ -200,7 +203,136 @@
             <p>“If you trace your cosmic roots,” said Abraham Loeb, a Harvard-Smithsonian astronomer who was not part of the team, “you wind up at inflation.”</p>
 
             <figcaption>A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. Order Reprints | Today’s Paper | Subscribe</figcaption>
+
+            <div id="footer-prologue">
+                <button id="subscribe">READ 615 COMMENTS</button>
+
+                <div id="footer-social-wrap">
+                        <img class="footer-socials" src="assets/facebook.svg" alt="go to facebook">
+                        <img class="footer-socials" src="assets/twitter.svg" alt="go to twitter">
+                        <img class="footer-socials" src="assets/email.svg" alt="go to email">
+                        <img class="footer-socials" src="assets/forward.svg" alt="forward this article">
+                        <img class="footer-socials" src="assets/bookmark.svg" alt="bookmark this article">
+                </div>
+            </div>
+
+            <aside>
+                <div class="ad"></div>
+            </aside>
         </section>
+
+        <hr>
+        <hr>
+
+        <footer>
+            <h2 class="new-york-times">The New York Times</h2>
+
+            <!--64 total elements for the left side of footer-->
+            <ul>
+                <!--Column 1 NEWS-->
+                <div>
+                    <li>NEWS</li>
+                    <li>Home Page</li>
+                    <li>World</li>
+                    <li>Coronavirus</li>
+                    <li>U.S.</li>
+                    <li>Politics</li>
+                    <li>Election Results</li>
+                    <li>New York</li>
+                    <li>Business</li>
+                    <li>Tech</li>
+                    <li>Science</li>
+                    <li>Sports</li>
+                    <li>Obituaries</li>
+                    <li>Today's Paper</li>
+                    <li>Corrections</li>
+                </div>
+
+                <!--Column 2 OPINION-->
+                <div>
+                    <li>OPINION</li>
+                    <li>Today's Opinion</li>
+                    <li>Op-Ed Columnists</li>
+                    <li>Editorials</li>
+                    <li>Op-Ed Contributors</li>
+                    <li>Letters</li>
+                    <li>Sunday Review</li>
+                    <li>Video: Opinion</li>
+                </div>
+
+                <!--column 3 ARTS-->
+                <div>
+                    <li>ARTS</li>
+                    <li>Today's Arts</li>
+                    <li>Art & Design</li>
+                    <li>Books</li>
+                    <li>Dance</li>
+                    <li>Movies</li>
+                    <li>Music</li>
+                    <li>Pop Culture</li>
+                    <li>Television</li>
+                    <li>Theater</li>
+                    <li>Video: Arts</li>
+                </div>
+
+                <!--column 4 LIVING-->
+                <div>
+                    <li>LIVING</li>
+                    <li>At Home</li>
+                    <li>Automobiles</li>
+                    <li>Games</li>
+                    <li>Education</li>
+                    <li>Food</li>
+                    <li>Health</li>
+                    <li>Jobs</li>
+                    <li>Love</li>
+                    <li>Magazine</li>
+                    <li>Parenting</li>
+                    <li>Real Estate</li>
+                    <li>Recipes</li>
+                    <li>Style</li>
+                    <li>T Magazine</li>
+                    <li>Travel</li>
+                </div>
+
+                <!--column 5 MORE-->
+                <div id="subscribe-footer">
+                    <li>MORE</li>
+                    <li>Reader Center</li>
+                    <li>Wirecutters</li>
+                    <li>Live Events</li>
+                    <li>The Learning Network</li>
+                    <li>Tools & Services</li>
+                    <li>Multimedia</li>
+                    <li>Photography</li>
+                    <li>Video</li>
+                    <li>Newsletter</li>
+                    <li>TimesMachine</li>
+                    <li>NYT STore</li>
+                    <li>Times Journeys</li>
+                    <li>Manage My Account</li>
+                </div>
+
+                <!--column 6 SUBSCRIBE-->
+                <div> 
+                    <li>SUBSCRIBE</li>
+                    <li>Home Delivery</li>
+                    <li>Digital Subscriptions</li>
+                    <li>Games</li>
+                    <li>Cooking</li>
+                    
+                    <li>Email Newsletters</li>
+                    <li>Corporate Subscriptions</li>
+                    <li id="footer-border">Education Rate</li>
+                    <li>Mobile Applications</li>
+                    <li>Replica Edition</li>
+                    <li>International</li>
+                    <li>Canada</li>
+                    <li>Español</li>
+                    <li>中文网</li>
+                </div>
+            </ul>
+        </footer>
     </article>
 </body>
 </html>
