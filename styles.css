@@ -67,7 +67,7 @@ nav #nav-center {
 }
 
 /*new york times font for nav*/
-#new-york-times {
+.new-york-times {
     font-family: "Chomsky", sans-serif;
     font-size: 1.5em;
 }
@@ -224,4 +224,83 @@ p .article-link {
 #boat-img {
     height: 400px;
     width: 700px;
+}
+
+/*footer prologue*/
+#subscribe, #log-in {
+    transition: background-color 0.3s ease-in;
+}
+#subscribe:hover, #log-in:hover {
+    cursor: pointer;
+    background-color: #365f7c;
+}
+
+#footer-prologue {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 5em;
+    width: 20em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footer-social-wrap {
+    width: 15em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+ #footer-prologue #footer-social-wrap .footer-socials {
+    border-radius: 45%;
+    margin-right: 8%;
+    margin-top: 2%;
+    background:rgb(219, 219, 219);
+    height: 8%;
+    border: 1px solid rgb(219, 219, 219);
+    transition: background-color 0.3s ease;
+}
+#footer-prologue #footer-social-wrap .footer-socials:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+#footer-prologue button {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+br {
+    display: inline-block;
+    width: 10%;
+}
+
+/*need 16 rows and 5 columns for left side of footer. Grid area might be a good use*/
+/*left side of footer*/
+footer h2 {
+    margin-left: 20%;
+}
+footer ul li {
+    font-family: 'Libre Franklin', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 0.7;
+    margin-top: 1rem;
+}
+footer ul li:nth-child(1) {
+    font-weight: bold;
+}
+footer div > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(6, 10%);
+    justify-content: center;
+}
+
+footer #subscribe-footer {
+    border-right: 1px solid lightgray;
+    margin-right: 2em;
 }
