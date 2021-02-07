@@ -268,9 +268,14 @@ p .article-link {
     padding-right: 4em;
 }
 
-br {
-    display: inline-block;
-    width: 10%;
+footer aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr {
+    width: 60%;
 }
 
 /*need 16 rows and 5 columns for left side of footer. Grid area might be a good use*/
@@ -303,4 +308,22 @@ footer ul {
 footer #subscribe-footer {
     border-right: 1px solid lightgray;
     margin-right: 2em;
+}
+
+footer #digital::first-letter {
+    font-family: "Chomsky", sans-serif;
+    font-size: 18px;
+}
+
+footer .bold-footer {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer #cooking {
+    margin-bottom: 2.5em;
+}
+
+footer .font-reduction {
+    font-size: 12px;
 }
